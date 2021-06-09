@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+table {
+    margin: 20px 300px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 20px;
+    background: gray;
+    color: white;
+}
+
+/* Show Info */
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#show_info {
+    font-size: 2rem;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#show_info p {
+    margin: 10px 0;
+}
+
+.show_values {
+    color: red;
+}
+
+/* New Show */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px 20px; 
+} 
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+textarea {
+    padding: 20px 0;
+}
