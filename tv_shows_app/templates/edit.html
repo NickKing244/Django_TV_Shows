@@ -13,6 +13,13 @@
         <h1>Edit Show <span class="show_values">{{show.id}}</span></h1>
         <a href="/shows">Go Back</a>
     </div>
+    {% if messages %}
+        <ul class="messages">    
+    {% for message in messages %}    
+        <li>{{ message }}</li>    
+    {% endfor %}
+        </ul>
+    {% endif %}
     <form action="/shows/{{show.id}}/update" method=POST>
         {% csrf_token %}
         <label for="title">Title</label>
